@@ -1011,7 +1011,7 @@
 3.区域协作机制将辅助种群划分为子种群以探索局部区域，而主要种群则进行全局搜索。两个群体之间的合作可以保持可行性和多样性。</p>
 </blockquote>
 <h3 id="_3">三、流程</h3>
-<p><img alt="这是图片" src="/docs\文献\IAERCEA\流程.png" /></p>
+<p><img alt="这是图片" src="/文献/IAERCEA/fig/流程.png" /></p>
 <blockquote>
 <p>其实就是先生成种群，进化一段时间后，对变量进行分组，然后两阶段搜索：
 1.看作无约束，同时为了节省资源开销，个体15次不更新则不继续探索
@@ -1022,15 +1022,15 @@
 <blockquote>
 <p>变量聚类方法根据决策变量对收敛性和多样性的影响将其分为两类：收敛相关变量和多样性相关变量。变量聚类的伪代码如下所示:</p>
 </blockquote>
-<p><img alt="这是图片" src="/docs\文献\IAERCEA\VC.png" /></p>
+<p><img alt="这是图片" src="/文献/IAERCEA/fig\VC.png" /></p>
 <p>其实就是：
-<img alt="这是图片" src="/docs\文献\IAERCEA\VCCH.png" /></p>
+<img alt="这是图片" src="/文献/IAERCEA/fig/VCCH.png" /></p>
 <h4 id="42">4.2 递归差分分组</h4>
 <blockquote>
 <p>进一步识别变量间的耦合关系，将相互影响的变量分到同一子组进行联合优化。</p>
 </blockquote>
 <p>具体做法：
-<img alt="这是图片" src="/docs\文献\IAERCEA\RDG.png" /></p>
+<img alt="这是图片" src="/文献/IAERCEA/fig/RDG.png" /></p>
 <h2 id="_5">五、阶段一</h2>
 <blockquote>
 <p>忽略约束，快速覆盖整个 UPF 并均匀分布
@@ -1038,8 +1038,8 @@
 <strong>多样性变量后续优化</strong> → 提升分布均匀性。
 <strong>个体停滞检测</strong> → 动态节省计算资源。</p>
 </blockquote>
-<p><img alt="这是图片" src="/docs\文献\IAERCEA\image1.png" />
-<img alt="这是图片" src="/docs\文献\IAERCEA\image2.png" /></p>
+<p><img alt="这是图片" src="/文献/IAERCEA/fig/image1.png" />
+<img alt="这是图片" src="/文献/IAERCEA/fig/image2.png" /></p>
 <h2 id="_6">六、阶段二</h2>
 <p><strong>第二阶段（Stage 2）的进化机制</strong>是 <strong>“区域协作进化”（Regional Collaboration）</strong>，其核心是通过 <strong>双种群协同搜索</strong> 和 <strong>子区域分工</strong>，引导种群从无约束帕累托前沿（UPF）迁移至约束帕累托前沿（CPF），同时平衡<strong>可行性</strong>与<strong>多样性</strong>。具体流程如下：</p>
 <hr />
