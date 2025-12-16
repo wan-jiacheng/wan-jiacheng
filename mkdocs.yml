@@ -1,11 +1,48 @@
-site_name: Next WanJiacheng
+site_name: Next | WanJiacheng
 theme:
   name: material
-  palette:
-    primary: 'indigo'
-    accent: 'pink'
+
+  icon:
+    logo: material/github
+
+  language: zh
+
+  palette: # Toggle light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: 切换到深色模式
+
+    # Toggle dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换到浅色模式
+
+
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.expand
+    - search.highlight
 
+
+
+copyright: 玩具车
+
+nav:
+
+  - 首页:
+      - 自我介绍: 首页\关于我.md
+
+  - 读研:
+      - 老程的大饼: 读研\nextme.md
+      - 文献阅读: 
+        - IAECRA: 文献\IAERCEA\IAERCEA.md
+        - SOI-GA: 文献\SOI_GA\SOI_GA.md
+
+  - 生活:
+      - 不能没有音乐: 人间世\推荐的音乐.md
